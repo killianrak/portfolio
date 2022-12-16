@@ -397,10 +397,6 @@ footer {
         flex-grow: 1;
     }
 
-    header .machine h1 {
-        margin-left: -20vmax;
-    }
-
   header nav ul {
     display: flex;
     justify-content: flex-end;
@@ -455,4 +451,10 @@ footer {
     font-size: 24px;
 }
 
+}
+
+@media screen and (min-width: 1280px){
+    header .machine h1 {
+        margin-left: -20vmax;
+    }
 }
