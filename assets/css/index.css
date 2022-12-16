@@ -24,47 +24,50 @@ body {
 
 }
 
-.main {
+#main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: calc(100vh - 110px);
 }
 
-header .deco {
-    background: #6C6CBF;    
+header .deco { 
     border-bottom: solid 5px #D2D2EB;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row-reverse;
 }
 
-section {
+#main {
     display: flex;
     flex-direction: column;
     margin: 8px;
+    height: 90%;
 }
 
-.main section span {
+#main .hey {
+    display: flex;
+    flex-direction: column;
+}
+
+#main span {
     padding-bottom: 24px;
     opacity: 0;
     transform: translateY(30px);
 }
 
-.main section span:nth-child(1){
-   font-size: 20px;
+#main span:nth-child(1){
+   font-size: 3vmax;
    animation: apparition 0.8s ease-out forwards;
 }
 
-.main section span:nth-child(2){
-    font-size:  36px;
+#main span:nth-child(2){
+    font-size:  5vmax;
     animation: apparition 0.8s 0.4s ease-out forwards;
  }
 
- .main section span:nth-child(3){
-    font-size: 28px;
+ #main span:nth-child(3){
+    font-size: 4vmax;
     animation: apparition 0.8s 0.8s ease-out forwards;
  }
 
@@ -83,36 +86,33 @@ span em {
     animation: pop 1s ease-out forwards;
     cursor: pointer;
     transition: all .5s;
- }
-
-.down {
     height: 50px;
     width: 50px;
     margin-bottom: 20px;
-}
+ }
 
-header .profile {
-    height: 50px;
-
-}
-
+ .down {
+    align-self: center;
+    margin-bottom: 50px;
+ }
 
 header .profile img {
-    border-radius: 50%;
-    width: 100px;
-    border: solid 5px #D2D2EB; 
+   width: 75%;
+   height: 100%;
+   object-fit: cover;
+   clip-path: polygon(25% 0%, 91% 0, 65% 100%, 0% 100%);
 }
+
 
 header .machine h1 {
     font-weight: 200;
-    font-size: white;
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
-    color: white;
-    text-align: center;
+    color: black;
     font-family: IBM Plex Mono, monospace;
-    position: relative;
-}
+    color: black;
+    font-weight: 400;
+    }
 
 header .machine span {
     border-right: .05em solid;
@@ -355,31 +355,16 @@ footer {
     border-top: solid 5px #D2D2EB;
 }
 
-@media screen and (min-width: 992px){
+.web-block {
+    display: flex;
+    flex-direction: row ;
+}
 
-    .main section span:nth-child(1){
-        font-size: 2vw;
-        animation: apparition 0.8s ease-out forwards;
-     }
-     
-     .main section span:nth-child(2){
-         font-size:  6vw;
-         animation: apparition 0.8s 0.4s ease-out forwards;
-      }
-     
-      .main section span:nth-child(3){
-         font-size: 4vw;
-         animation: apparition 0.8s ease-out forwards;
-      }
+@media screen and (min-width: 768px){
 
     .main  {
         align-items: unset;
         margin-left: 50px;
-    }
-
-    .first-button {
-        align-self: center;
-        margin-bottom: 200px;
     }
 
     header nav {
@@ -387,22 +372,19 @@ footer {
         width: 100%;
         border-bottom: solid 5px #D2D2EB;
     }
+
     header .deco {
-        background: none;
+        display: flex;
         flex-direction: row-reverse;
         border-bottom: none;
         align-items: unset;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
     header .machine {
         flex-grow: 1;
-        text-align: start;
     }
 
     header .machine h1 {
-        color: black;
-        font-weight: 400;
         margin-left: -20vmax;
     }
 
@@ -436,19 +418,11 @@ footer {
     height: auto;
   }
 
-  header .profile img {
-    border-radius: 0%;
-    width: 60%;
-    border: none;
-    box-shadow: none;
-    clip-path: polygon(25% 0%, 91% 0, 65% 100%, 0% 100%);
-  }
-
   .all {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
 
   .all form {
