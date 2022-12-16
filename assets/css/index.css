@@ -356,8 +356,6 @@ form input[type="submit"]{
 footer {
     background: #2D2F27;
     color: white;
-    display: flex;
-    justify-content: space-around;
     font-size: 20px;
     padding: 40px;
     border-top: solid 5px #D2D2EB;
@@ -365,7 +363,10 @@ footer {
 
 @media screen and (min-width: 768px){
 
-
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
     .onglet .web svg, .onglet .gs svg {
         display: none;
     }
