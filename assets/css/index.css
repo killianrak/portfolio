@@ -30,6 +30,7 @@ body {
     justify-content: space-around;
     align-items: center;
     margin: 8px;
+    height: 90%;
 }
 
 header .deco { 
@@ -42,6 +43,8 @@ header .deco {
 #main .hey {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    margin: 16px;
 }
 
 #main span {
@@ -88,6 +91,10 @@ span em {
  .down {
     align-self: center;
     margin-bottom: 50px;
+ }
+
+ .toleft {
+    align-self: flex-start;
  }
 
 header .profile img {
@@ -160,7 +167,7 @@ h1 {
     background: rgba(149, 149, 227, 0.2);
     border-radius: 0px 5px 5px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     transition: all 0.5s;
     opacity: 0;
 }
@@ -216,12 +223,11 @@ h1 {
     padding: 20px;
     text-align: center;
     margin: 100px 50px 50px 50px;
-    height: 50vh;
+    height: 60vh;
     width: 200px;
     transform: rotate(5deg);
     transition: all .5s;
 }
-
 
 .onglet .web ul, .onglet .gs ul {
     list-style-type: none;
