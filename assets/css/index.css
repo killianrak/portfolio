@@ -306,7 +306,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    font-size: 24px;
+    font-size: 16px;
     color: white;
     background:#5050b5;
     border-radius: 5px;
@@ -314,12 +314,12 @@ p {
 }
 
 .formulaire div span {
-    padding: 10px;
+    padding: 5px;
 }
 
 .formulaire div {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .formulaire span:nth-child(1){
@@ -447,4 +447,11 @@ footer {
   .onglet .web, .onglet .gs {
     height: 50vh;
   }
+
+  .formulaire div {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
 }
