@@ -88,6 +88,7 @@ span em {
 .down {
     height: 50px;
     width: 50px;
+    margin-bottom: 100px;
 }
 
 header .profile {
@@ -221,7 +222,7 @@ h1 {
     padding: 20px;
     text-align: center;
     margin: 100px 50px 50px 50px;
-    height: 50vh;
+    height: 55vh;
     width: 200px;
     transform: rotate(5deg);
     transition: all .5s;
