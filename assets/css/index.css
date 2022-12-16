@@ -29,7 +29,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 header .deco { 
@@ -89,7 +88,7 @@ span em {
     transition: all .5s;
     height: 50px;
     width: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
  }
 
  .down {
