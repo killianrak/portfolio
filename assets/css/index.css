@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 header .deco { 
@@ -342,6 +343,7 @@ form input[type="submit"]{
     width: 20vmax;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 15px;
 
 }
 
@@ -353,11 +355,6 @@ footer {
     font-size: 20px;
     padding: 40px;
     border-top: solid 5px #D2D2EB;
-}
-
-.web-block {
-    display: flex;
-    flex-direction: row ;
 }
 
 @media screen and (min-width: 768px){
