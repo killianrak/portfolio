@@ -73,7 +73,7 @@ span em {
     color: #9595E3;
 }
 
- svg {
+ .onglet .web svg, .onglet .gs svg, .down svg {
     transform: scale(0);
     color: #9595E3;
     border-radius: 50%;
@@ -85,17 +85,24 @@ span em {
     transition: all .5s;
     height: 50px;
     width: 50px;
-    margin-bottom: 50px;
  }
+
+
+ .onglet .web svg, .onglet .gs svg {
+    display: block;
+    margin-left: 50px;
+    
+}
 
  .down {
     align-self: center;
     margin-bottom: 50px;
  }
 
- .toleft {
-    align-self: flex-start;
+ .tohide {
+    display: none;
  }
+
 
 header .profile img {
    width: 75%;
@@ -220,7 +227,7 @@ h1 {
     background: white;
     opacity: 0.5;
     border-radius: 10px; 
-    padding: 20px;
+    padding: 0 20px 20px;
     text-align: center;
     margin: 100px 50px 50px 50px;
     height: 60vh;
@@ -233,7 +240,7 @@ h1 {
     list-style-type: none;
     font-size: 16px;
     color: black;
-    margin-top: 20px;
+    margin-top: -10px;
 }
 
 .onglet .web ul li, .onglet .gs ul li {
@@ -358,9 +365,14 @@ footer {
 
 @media screen and (min-width: 768px){
 
-    .toleft {
-        align-self: center;
-     }
+
+    .onglet .web svg, .onglet .gs svg {
+        display: none;
+    }
+
+    .tohide {
+        display: block;
+    }
 
     .main  {
         align-items: unset;
