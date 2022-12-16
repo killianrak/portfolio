@@ -88,7 +88,7 @@ span em {
 .down {
     height: 50px;
     width: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 header .profile {
@@ -222,7 +222,7 @@ h1 {
     padding: 20px;
     text-align: center;
     margin: 100px 50px 50px 50px;
-    height: 55vh;
+    height: 50vh;
     width: 200px;
     transform: rotate(5deg);
     transition: all .5s;
@@ -379,11 +379,9 @@ footer {
 
     .first-button {
         align-self: center;
-        margin-bottom: 200px;;
+        margin-bottom: 200px;
     }
-    .down {
-        margin-bottom: 20px;
-    }
+
     header nav {
         display: flex;
         width: 100%;
