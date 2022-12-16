@@ -355,7 +355,7 @@ footer {
     border-top: solid 5px #D2D2EB;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
 
     .main section span:nth-child(1){
         font-size: 2vw;
