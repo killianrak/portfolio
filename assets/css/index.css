@@ -358,6 +358,10 @@ footer {
 
 @media screen and (min-width: 768px){
 
+    .toleft {
+        align-self: center;
+     }
+
     .main  {
         align-items: unset;
         margin-left: 50px;
@@ -428,5 +432,7 @@ footer {
   .all .formulaire {
     width: 600px;
   }
-
+  .onglet .web, .onglet .gs {
+    height: 50vh;
+  }
 }
