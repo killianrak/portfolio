@@ -280,16 +280,83 @@ h1 {
 }
 
 #myworks {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background: rgba(149, 149, 227, 0.2);
+    padding: 10px;
+}
 .contenu {
     flex: 1 0 auto;
 }
+.work h2 {
+    font-family: 'League Spartan';
+    font-size: 20px;
+    color: #063970;
+}
 
+.work .plus a {
+    text-decoration: none;
+    color: #063970;
+}
+.illustration {
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: #063970 solid 2px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+
+    box-shadow: 3px 3px 6px #848484,
+    -3px -3px 6px #f1f1f6;
+}
+
+.illustration img {
+    width: 150px;
+}
+
+.discord img {
+    width: 75px;
+}
+.work .plus {
+    border: solid #063970 2px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background linear 0.3s;
+}
+
+.work .plus a {
+    transition: color linear 0.3s;
+}
+
+.work .plus:hover a {
+    color: white;
+}
+
+.work .plus:hover {
+    background: #063970;
+}
+.content {
+    display: flex;
+    padding-top: 10px;
+}
 p {
     font-size: 16px;
 }
@@ -360,6 +427,8 @@ footer {
     padding: 40px;
     border-top: solid 5px #D2D2EB;
 }
+
+
 
 @media screen and (min-width: 768px){
 
@@ -451,7 +520,17 @@ footer {
     font-size: 24px;
 }
 
+   .contenu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+   }
 
+   .work {
+    width: 350px;
+    margin: 10px;
+
+   }
 
 }
 
